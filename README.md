@@ -35,7 +35,7 @@ Haz doble clic sobre el archivo **`start_project.bat`** (en sistemas Windows).
 
 **¿Cómo se comporta el script?**
 * **Primera ejecución:** El script detectará que la estructura de Django aún no existe. Te pedirá de forma interactiva en la consola que **introduzcas el nombre del proyecto Django** (ej. `my_digital_books` o `web_tienda_deportes`). Docker generará los archivos limpios en tu máquina local y, acto seguido, levantará el servidor.
-* **Siguientes ejecuciones:** El script detectará que el proyecto ya está creado, omitirá las preguntas y levantará directamente tus contenedores con `docker compose up`. Este proceso es totalmente automático.
+* **Siguientes ejecuciones:** El script detectará que el proyecto ya está creado, omitirá las preguntas y levantará directamente tus contenedores con `docker compose up`. Este proceso es totalmente automático y no es necesario repetir a menos que elimines el contenedor.
 
 El servidor web estará disponible de inmediato en: **`http://localhost:8000`**
 

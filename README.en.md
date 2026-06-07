@@ -35,14 +35,14 @@ Double-click the **`start_project.bat`** file (on Windows systems).
 
 **How does the script behave?**
 * **First-time execution:** The script will detect that the Django project structure does not exist yet[cite: 2]. It will interactively prompt you in the console to **enter the Django project name** (e.g., `my_digital_books` or `web_tienda_deportes`)[cite: 2]. Docker will generate the clean files into your local directory and immediately spin up the server.
-* **Subsequent executions:** The script will detect that the project is already created, skip the setup questions, and directly run your containers using `docker compose up`[cite: 2]. This process is completely automatic.
+* **Subsequent executions:** The script will detect that the project is already created, skip the setup questions, and directly run your containers using `docker compose up`[cite: 2]. This process is completely automatic and it's not necessary to repeat unless you remove the container.
 
 The web server will be immediately available at: **`http://localhost:8000`**
 
 ---
 
 ### Step 3: Configure the Database and the Admin Panel
-Once you see the Django rocket page in your browser, you must prepare the local database (SQLite3) and create your control panel access account].
+Once you see the Django rocket page in your browser, you must prepare the local database (SQLite3) and create your control panel access account.
 
 Before running the commands, check **Docker Desktop** to ensure your project's container is marked in green (`Running`)[cite: 2]. With the container active, open the docker terminal (bottom right corner):
 
