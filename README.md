@@ -47,14 +47,14 @@ Una vez que veas el cohete de Django en el navegador, debes preparar la base de 
 Antes de ejecutar los comandos, echa un vistazo a **Docker Desktop** para asegurarte de que el contenedor de tu proyecto está en verde (`Running`). Con el contenedor activo, abre la terminal de docker (esquina inferior derecha):
 
 1. **Aplicar las Migraciones Iniciales:**
-   Crea el archivo `db.sqlite3` local y genera las tablas necesarias para el sistema de autenticación:
+   Crea el archivo `db.sqlite3` local y genera las tablas necesarias para el sistema de autenticación, introduce estes comando en la terminal:
 
-   docker compose exec web python manage.py migrate
+   `docker compose exec web python manage.py migrate`
 
 2. **Crear el Superusuario Administrador:**
-    Lanza el asistente interactivo para configurar tus credenciales:
+    Lanza el asistente interactivo para configurar tus credenciales, introduce este comando en la terminal:
 
-    docker compose exec web python manage.py createsuperuser
+    `docker compose exec web python manage.py createsuperuser`
 
     Introduce tu usuario y contraseña (los caracteres no se mostrarán al escribir por seguridad, puedes omitir el email).
 

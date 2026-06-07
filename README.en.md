@@ -47,14 +47,14 @@ Once you see the Django rocket page in your browser, you must prepare the local 
 Before running the commands, check **Docker Desktop** to ensure your project's container is marked in green (`Running`)[cite: 2]. With the container active, open the docker terminal (bottom right corner):
 
 1. **Apply Initial Migrations:**
-   Creates the local `db.sqlite3` file and generates the required database tables for the authentication system:
+   Creates the local `db.sqlite3` file and generates the required database tables for the authentication system, enter this command in the terminal:
 
-   docker compose exec web python manage.py migrate
+   `docker compose exec web python manage.py migrate`
 
 2. **Create the Admin Superuser:**
-    Launches the interactive assistant to set up your access credentials:
+    Launches the interactive assistant to set up your access credentials, enter this command in the terminal:
 
-    docker compose exec web python manage.py createsuperuser
+    `docker compose exec web python manage.py createsuperuser`
 
     Enter your username and password (characters will not be displayed while typing for security reasons; you can skip the email address).
 
